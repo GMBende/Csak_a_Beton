@@ -20,7 +20,63 @@
 .oszi_focim h1, .bazsi_focim h1 {
     font-size: 46px;
     font-variant: small-caps;
-    text-shadow: 2px 2px 4px gray;
+    text-shadow: 2px 2px 4px #F28C28;
+}
+
+.oszi_focim p {
+    font-size: 20px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px #F28C28;
+}
+
+.oszi_cards {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    animation-name: beuszas;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.oszi_card {
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 500px;
+}
+
+
+
+.oszi_card p, h1 {
+    padding: 20px;
+}
+
+.oszi_card p {
+    font-size: 20px;
+}
+
+.oszi_card h1 {
+    font-size: 50px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.oszi_card h1:hover {
+    transform: scale(1.3);
+    transition: transform 1s ease;
+}
+
+.oszi_cardkep {
+    width: 395px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 250px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
 .bazsi_cards{
@@ -135,30 +191,6 @@ nav {
 
 }
 
-.oszi_cards img {
-    width: 500px;
-    height: 300px;
-    border-radius: 10px;
-}
-
-.oszi_cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 100px;
-}
-
-.oszi_card {
-    width: 600px;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.oszi_cards p {
-    font-size: 20px;
-}
-
 .nav a:hover {
     color: #F28C28;
 }
@@ -225,6 +257,23 @@ header div {
   100% {opacity: 1; transform: translateX(0);}
 }
 
+.oszi_icons img{
+    height: 70px;
+}
+
+.oszi_icons {
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.oszi_icons img:hover {
+    transform: scale(1.5);
+    transition: transform 1s ease;
+}
 .bemutatkozas {
     background-color: #E5E5E5;
     font-size: 1.2rem;

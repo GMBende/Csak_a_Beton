@@ -1,0 +1,290 @@
+HTML
+<div class="map-card">
+
+    <!-- TÉRKÉP -->
+    <div class="map-card__map">
+
+        <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=19.035%2C47.505%2C19.075%2C47.525&layer=mapnik&marker=47.515%2C19.055"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+
+    <!-- ALSÓ INFORMÁCIÓS RÉSZ -->
+    <div class="map-card__footer">
+
+        <!-- LOGÓ -->
+        <div class="map-card__column map-card__logo-column">
+
+            <div class="map-card__logo">
+                PP
+                <span>
+                    PRO<br>
+                    PERFORMANCE KFT.
+                </span>
+            </div>
+
+        </div>
+
+
+        <!-- SZOLGÁLTATÁSOK -->
+        <div class="map-card__column">
+
+            <h3>SZOLGÁLTATÁSOK</h3>
+
+            <a href="#">› Zsaluzás</a>
+            <a href="#">› Betonozás</a>
+            <a href="#">› Építőipari munkák</a>
+
+        </div>
+
+
+        <!-- KAPCSOLAT -->
+        <div class="map-card__column">
+
+            <h3>KAPCSOLAT</h3>
+
+            <p>Cím: 1064 Budapest</p>
+            <p>Telefon: +36 30 123 4567</p>
+            <p>Email: info@pelda.hu</p>
+
+        </div>
+
+    </div>
+
+</div>
+CSS
+/* =========================================
+   MAP CARD
+   ========================================= */
+
+.map-card {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   TÉRKÉP
+   ========================================= */
+
+.map-card__map {
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+}
+
+.map-card__map iframe {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    border: 0;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.map-card__footer {
+    width: 100%;
+
+    min-height: 150px;
+
+    padding: 30px 40px;
+
+    background: #273345;
+
+    color: white;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* =========================================
+   OSZLOPOK
+   ========================================= */
+
+.map-card__column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.map-card__column h3 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.map-card__column p {
+    margin: 0;
+
+    color: white;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   LINK
+   ========================================= */
+
+.map-card__column a {
+    color: white;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.map-card__column a:hover {
+    color: #a9cee3;
+}
+
+
+/* =========================================
+   LOGÓ
+   ========================================= */
+
+.map-card__logo-column {
+    align-items: center;
+}
+
+.map-card__logo {
+    width: 160px;
+    height: 60px;
+
+    padding: 0 10px;
+
+    background: #a9cee3;
+
+    color: #273345;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    letter-spacing: -2px;
+}
+
+.map-card__logo span {
+    font-size: 9px;
+
+    line-height: 10px;
+
+    letter-spacing: 0;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .map-card__footer {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 30px;
+    }
+
+    .map-card__logo-column {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBIL
+   ========================================= */
+
+@media (max-width: 550px) {
+
+    .map-card__map {
+        height: 280px;
+    }
+
+    .map-card__footer {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 30px 25px;
+    }
+
+    .map-card__logo-column {
+        align-items: flex-start;
+    }
+
+}
+Így tudod beágyazni
+Például ha van egy saját cardod:
+
+<div class="my-card">
+
+    <h2>Kapcsolat</h2>
+
+    <p>Keress minket bizalommal!</p>
+
+
+    <!-- IDE JÖN A TÉRKÉP CARD -->
+    <div class="map-card">
+
+        ...
+
+    </div>
+
+</div>
+A lényeg, hogy nem kell hozzá body, html, section vagy globális CSS. A .map-card az egész komponenst kezeli.
+
+Ha pedig azt szeretnéd, hogy maga a térkép is egy valódi, egybefüggő kártya legyen, például a képedhez hasonlóan felül térkép → alul sötétkék információs rész, akkor a fenti megoldás pont erre van felépítve.
+
+A max-width: 1200px értéket pedig nyugodtan lecserélheted például erre:
+
+.map-card {
+    width: 100%;
+    max-width: none;
+}

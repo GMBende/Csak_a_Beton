@@ -5,17 +5,53 @@
     flex-direction: column;
     text-align: center;
 }
-.bazsi_focim h1{
-    font-size: 36px;
-    font-variant: small-caps;
-}
 
-.oszi_focim h1 {
+.oszi_focim h1, .bazsi_focim h1 {
     font-size: 36px;
     font-variant: small-caps;
     text-shadow: 2px 2px 4px gray;
 }
 
+.bazsi_cards{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+
+
+}
+.bazsi_card{
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 500px;
+    transition: transform 0.3s ease;
+    background-color: #E5E5E5;
+}
+
+.bazsi_cardskep{
+    width: 400px;
+    border-radius: 16px;
+    height: 250px;
+
+}
+
+.bazsi_card p{
+    margin: 15px;
+    font-size: 20px;
+
+
+}
+.bazsi_card h1{
+    text-align: center;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.bazsi_card:hover{
+    transform: scale(1.2);
+}
 
 
 body {

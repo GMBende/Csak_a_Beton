@@ -1,0 +1,11 @@
+.bazsi_focim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.bazsi_focim h1{
+    font-size: 36px;
+    font-variant: small-caps;
+}

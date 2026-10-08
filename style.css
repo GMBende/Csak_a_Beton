@@ -8,7 +8,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background-image: url(img/background_beton.png);
+    padding-bottom: 20px;
 }
+
 .bazsi_focim h1{
     font-size: 36px;
     font-variant: small-caps;
@@ -20,7 +23,9 @@
     text-shadow: 2px 2px 4px gray;
 }
 
-
+.oszi_focim p {
+    text-shadow: 3px 3px 5px gray;
+}
 
 body {
     display: flex;
@@ -52,6 +57,37 @@ nav {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+}
+
+.oszi_menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.oszi_cards img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.oszi_cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.oszi_card {
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.oszi_cards p {
+    font-size: 20px;
 }
 
 .nav a:hover {

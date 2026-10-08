@@ -1,0 +1,16 @@
+.oszi_focim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.oszi_focim h1 {
+    font-size: 36px;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 4px gray;
+}
+
+
+

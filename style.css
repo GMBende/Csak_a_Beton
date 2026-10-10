@@ -85,9 +85,10 @@
     justify-content: center;
     gap: 30px;
     margin-top: 50px;
-
-
 }
+
+
+
 .bazsi_card{
     width: 400px;
     border: 3px solid black;
@@ -125,6 +126,16 @@
     border-right: 7px solid #b96d20;
 
     color: black;
+}
+
+.jogomb{
+    border-bottom: 7px solid black;
+    border-right: 7px solid black;
+}
+
+.megjobbgomb{
+    border-bottom: 7px solid #b96d20;
+    border-right: 7px solid #b96d20;
 }
 
 .bazsi_card a{

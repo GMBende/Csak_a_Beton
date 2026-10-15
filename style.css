@@ -213,6 +213,88 @@
     text-shadow: 3px 3px 5px gray;
 }
 
+.bazsi_cim_zsalu{
+    display: flex;
+    flex-direction: column;
+}
+.bazsi_cim_zsalu h1{
+    margin-right: 180px;
+    font-variant: small-caps;
+    font-size: 50px ;
+    background-color: #252525;
+    padding-left: 150px;
+    color: #ffffff;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+}
+.bazsi_cim_zsalu2 h1{
+    margin-left: 180px;
+    font-variant: small-caps;
+    font-size: 50px ;
+    background-color: #252525;
+    padding-left: 150px;
+    color: #ffffff;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+}
+
+.bazsi_cim_zsalu3{
+    text-align: center;
+    background-color: #252525;
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 0 210px;
+    margin-bottom: 50px ;
+    padding: 20px 600px;
+    font-variant: small-caps;
+    font-size: 46px;
+
+}
+.bazsi_zsaltipusok_p {
+    margin: 0 50px 150px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+.bazsi_zsaltipusok_p2 {
+    margin: 0 50px 50px 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bazsi_zsaltipusok_h1{
+    font-size: 20px;
+    text-align: center;
+    font-variant: small-caps;
+}
+.bazsi_zsaltipusok{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.bazsi_card2{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 500px;
+    background-color: #E5E5E5;
+}
+
+.bazsi_cards2{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    
+}
+
+
 body {
     display: flex;
     justify-content: center;

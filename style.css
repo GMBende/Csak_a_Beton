@@ -221,6 +221,7 @@
     color: #ffffff;
     border-top-right-radius: 20px ;
     border-bottom-right-radius: 20px ;
+    text-shadow: 2px 2px 4px #F28C28;
 }
 .bazsi_cim_zsalu2 h1{
     margin-left: 180px;
@@ -231,6 +232,7 @@
     color: #ffffff;
     border-top-left-radius: 20px ;
     border-bottom-left-radius: 20px ;
+    text-shadow: 2px 2px 4px #F28C28;
 }
 
 .bazsi_cim_zsalu3{
@@ -243,12 +245,14 @@
     padding: 20px 600px;
     font-variant: small-caps;
     font-size: 46px;
+    text-shadow: 2px 2px 4px #F28C28;
 
 }
 .bazsi_zsaltipusok_p {
-    margin: 0 50px 150px 50px;
+    margin: 20px 50px 0 50px;
     font-size: 20px;
     text-align: center;
+
 }
 .bazsi_zsaltipusok_p2 {
     margin: 0 50px 50px 50px;
@@ -260,6 +264,12 @@
     font-size: 20px;
     text-align: center;
     font-variant: small-caps;
+    text-shadow: 2px 2px 4px #F28C28;
+
+    height: 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bazsi_zsaltipusok{
     margin-top: 100px;
@@ -269,27 +279,68 @@
     align-items: center;
 
 }
-.bazsi_card2{
+.bazsi_card2 {
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    justify-content: flex-start;
     width: 400px;
-    border: 3px solid black;
-    border-radius: 20px;
     height: 500px;
-    background-color: #E5E5E5;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.493), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px; 
+}
+.bazsi_card2_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+.bazsi_card2:hover .bazsi_card2_inner {
+  transform: rotateY(180deg);
 }
 
-.bazsi_cards2{
+.bazsi_card2_back {
+    background-color: #ffffff;
+    transform: rotateY(180deg); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bazsi_cards2 {
     display: flex;
     align-items: center; 
     justify-content: center;
     gap: 30px;
-    margin: 0;
-    
+    margin: 0 0 100px 0;
 }
 
+.bazsi_zsaltipusok_img,
+.bazsi_zsaltipusok_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
 
+.bazsi_card2_front,
+.bazsi_card2_back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+}
+
+.bazsi_card2:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgb(0, 0, 0);
+}
 body {
     display: flex;
     justify-content: center;

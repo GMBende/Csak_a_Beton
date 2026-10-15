@@ -8,13 +8,62 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-image: url(img/background_beton.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/background_beton.png);
     padding-bottom: 20px;
 }
 
 .bazsi_focim h1{
     font-size: 46px;
     font-variant: small-caps;
+}
+
+.bazsi_batartalom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 100px 30px 120px 220px;
+}
+
+.bazsi_batartalom2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 100px 220px 120px 30px;
+}
+.bazsi_batartalom2 img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.bazsi_batartalom2 p{
+    margin:40px 200px 0 200px;
+    font-size: 20px;
+}
+
+
+.bazsi_batartalom img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.bazsi_batartalom p{
+    margin:40px 200px 0 200px;
+    font-size: 20px;
+}
+
+.bazsi_csikk{
+    height: 5px;
+    background-color: black;
+    width: 80%;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.bazsi_focim p{
+    font-size: 20px;
+    font-variant: small-caps;
+    color: white;
+
 }
 
 .oszi_focim h1, .bazsi_focim h1 {
@@ -27,6 +76,7 @@
     font-size: 20px;
     font-variant: small-caps;
     text-shadow: 2px 2px 4px #F28C28;
+    color: white;
 }
 
 .oszi_cards {
@@ -84,7 +134,8 @@
     align-items: center; 
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin: 60px 0;
+    
 }
 
 
